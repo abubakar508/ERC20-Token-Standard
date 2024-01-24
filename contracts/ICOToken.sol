@@ -17,7 +17,7 @@ contract MyICO is ERC20, Ownable {
 
     event TokensPurchased(address indexed buyer, uint256 amount, uint256 tokens);
 
-    constructor(string memory name, string memory symbol) ERC20(name, symbol) {
+    constructor(string memory name, string memory symbol) ERC20("Abisma", "ABM") {
         owner = msg.sender;
         startTime = block.timestamp;
     }
